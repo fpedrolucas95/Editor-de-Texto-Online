@@ -6,6 +6,7 @@
   <li><strong>Abrir</strong>: permite ao usuário selecionar um arquivo de texto do seu computador e carregá-lo no editor.</li>
   <li><strong>Salvar</strong>: permite ao usuário salvar o conteúdo do editor em um arquivo de texto no seu computador. O nome do arquivo e sua extensão (".txt") são solicitados ao usuário antes de salvar. Caso não seja fornecido um formato de arquivo ao nome ao salvar, ele adiciona a extensão (".txt") automaticamente. </li>
   <li><strong>Imprimir</strong>: abre uma nova janela com o conteúdo da textarea e permite que o usuário imprima o conteúdo usando o navegador.</li>
+  <li><strong>Temas</strong>: existe opções de temas claros e escuros.</li>
 </ul>
 
 <p>Além dessas funcionalidades, o editor possui uma área de texto em que o usuário pode digitar ou colar o texto desejado e formatá-lo usando o próprio editor.</p>
