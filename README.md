@@ -1,4 +1,4 @@
-<h1>Editor de Texto Online</h1>
+<h1><img src="favicon.ico" alt="">Editor de Texto Online</h1>
 
 <p>Este é um editor de texto online simples e fácil de usar. Ele possui as seguintes funcionalidades principais:</p>
 
