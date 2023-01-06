@@ -1,0 +1,68 @@
+        #filename {
+            background-color: #F0F0F0;
+            width: 100%;
+            font-size: 12px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 0;
+            text-align: justify;
+        }
+
+        button {
+            background-color: #ffffff;
+            border: 1px;
+            color: rgb(0, 0, 0);
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 10px 10px;
+            cursor: pointer;
+        }
+
+        .dark-theme button {
+            background-color: #333333;
+            color: white;
+        }
+
+        button:hover {
+            background-color: #F0F0F0;
+        }
+
+        button:active {
+            background-color: #D3D3D3;
+        }
+
+        textarea {
+            width: 98%;
+            height: 83vh;
+            font-size: 16px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 12px;
+        }
+
+        h3 {
+            font-size: 11px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 10px;
+            display: inline;
+            align-items: center;
+        }
+
+        h3 img {
+            vertical-align: middle;
+            /* alinha a imagem com o texto */
+            margin-right: 10px;
+            /* afasta o texto da imagem */
+        }
+
+        .dark-theme {
+            background-color: black;
+            color: white;
+        }
+
+        .dark-theme textarea {
+            background-color: #333333;
+            color: white;
+        }
