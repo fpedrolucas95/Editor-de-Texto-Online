@@ -1,68 +1,104 @@
-        #filename {
-            background-color: #F0F0F0;
-            width: 100%;
-            font-size: 12px;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            margin: 0;
-            text-align: justify;
-        }
+#toolbar {
+display: flex;
+align-items: center;
+background-color: #f0f0f0;
+padding: 12px;
+border-radius: 4px;
+transition: background-color 200ms ease-in-out;
+}
 
-        button {
-            background-color: #ffffff;
-            border: 1px;
-            color: rgb(0, 0, 0);
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 14px;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            margin: 10px 10px;
-            cursor: pointer;
-        }
+#filename {
+font-size: 12px;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+margin: 0;
+text-align: justify;
+flex-grow: 1;
+}
 
-        .dark-theme button {
+button {
+background-color: #ffffff;
+border: 1px;
+color: #000;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 14px;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+margin: 10px 10px;
+cursor: pointer;
+border-radius: 4px;
+transition: background-color 200ms ease-in-out;
+}
+
+.dark-theme button {
+background-color: #333333;
+color: white;
+transition: background-color 200ms ease-in-out;
+}
+
+button:hover {
+background-color: #f0f0f0;
+}
+
+button:active {
+background-color: #d3d3d3;
+}
+
+textarea {
+width: 98%;
+height: 74vh;
+font-size: 16px;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+margin: 12px;
+border-radius: 4px;
+transition: background-color 200ms ease-in-out;
+}
+
+footer {
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #f0f0f0;
+padding: 12px;
+border-radius: 4px;
+transition: background-color 200ms ease-in-out;
+}
+
+h3 {
+font-size: 11px;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+margin: 0;
+display: inline;
+align-items: center;
+}
+
+h3 img {
+vertical-align: middle;
+/* alinha a imagem com o texto / /
+margin-right: 10px;
+/ afasta o texto da imagem */
+}
+
+.dark-theme {
+background-color: black;
+color: white;
+}
+
+.dark-theme #toolbar {
+background-color: #333333;
+}
+
+.dark-theme #filename {
+color: white;
+}
+
+.dark-theme footer {
+background-color: #333333;
+color: white;
+}
+
+.dark-theme textarea {
             background-color: #333333;
             color: white;
-        }
-
-        button:hover {
-            background-color: #F0F0F0;
-        }
-
-        button:active {
-            background-color: #D3D3D3;
-        }
-
-        textarea {
-            width: 98%;
-            height: 83vh;
-            font-size: 16px;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            margin: 12px;
-        }
-
-        h3 {
-            font-size: 11px;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            margin: 10px;
-            display: inline;
-            align-items: center;
-        }
-
-        h3 img {
-            vertical-align: middle;
-            /* alinha a imagem com o texto */
-            margin-right: 10px;
-            /* afasta o texto da imagem */
-        }
-
-        .dark-theme {
-            background-color: black;
-            color: white;
-        }
-
-        .dark-theme textarea {
-            background-color: #333333;
-            color: white;
-        }
+}
