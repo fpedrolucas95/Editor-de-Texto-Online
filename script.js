@@ -16,17 +16,17 @@
     const newButton = document.getElementById('new-button');
     newButton.addEventListener('click', newFile);
 
-    // Função para abrir arquivo
-    function openFile(event) {
-        const input = event.target;
-        const reader = new FileReader();
-        reader.onload = function () {
-            editor.value = reader.result;
-            const countWords = reader.result.split(" ").length;
-            filenameDiv.innerHTML = `${input.files[0].name} (${input.files[0].size} bytes, ${countWords} palavras, ${reader.result.length} caracteres)`;
-        };
-        reader.readAsText(input.files[0]);
-    }
+// Função para abrir arquivo
+function openFile(event) {
+    const input = event.target;
+    const reader = new FileReader();
+    reader.onload = function () {
+        editor.value = reader.result;
+        const countWords = reader.result.split(" ").length;
+        filenameDiv.innerHTML = `${input.files[0].name} <br> Tamanho do arquivo: ${(input.files[0].size/1024).toFixed(1)} kB <br> Quantidade de caracteres: ${reader.result.length} <br> Quantidade de palavras: ${countWords}`;
+    };
+    reader.readAsText(input.files[0]);
+}
 
     // Função para salvar arquivo
     function saveFile() {
@@ -134,4 +134,3 @@
     const revertButton = document.getElementById("revert-button");
     revertButton.addEventListener("click", revertToPrevious);
 })();
-
