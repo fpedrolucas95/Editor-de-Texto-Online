@@ -2,7 +2,7 @@
 
 <p>Este é um editor de texto online simples e fácil de usar. Ele possui as seguintes funcionalidades principais:</p>
 
-<img src=img/img1.jpg></img>
+<img src=img/img1.png></img>
 
 <ul>
   <li><strong>Novo</strong>: cria um novo documento.</li>
