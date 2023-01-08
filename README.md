@@ -27,6 +27,6 @@
   <li>Testado no Google Chrome (Mac/Win), Safari (Mac), MS Edge (Win), Firefox (Win) e Internet Explorer 11.</li>
 </ul>
 <h2>Instalação</h2>
-<p>Para usar este editor de texto, basta baixar o arquivo HTML e abri-lo em um navegador. Não é necessária nenhuma instalação adicional.</p>
+<p>Para usar este editor de texto, basta baixar os arquivos, extrair o zip e abrir o arquivo index.html em um navegador. Não é necessária nenhuma instalação adicional.</p>
 <h2>Contribuição</h2>
 <p>Este projeto é de código aberto e qualquer pessoa é bem-vinda para contribuir com correções de erros ou novas funcionalidades. Se você deseja contribuir, basta criar um pull request com suas alterações.</p>
