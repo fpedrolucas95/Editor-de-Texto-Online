@@ -23,7 +23,7 @@
         reader.onload = function () {
             editor.value = reader.result;
             const countWords = reader.result.split(" ").length;
-            filenameDiv.innerHTML = `${input.files[0].name} <br> Tamanho do arquivo: ${(input.files[0].size / 1024).toFixed(1)} kB <br> Quantidade de caracteres: ${reader.result.length} <br> Quantidade de palavras: ${countWords}`;
+            filenameDiv.innerHTML = `${input.files[0].name} <br> Tamanho do arquivo: ${(input.files[0].size / 1024).toFixed(1)} kB <br> Quantidade de caracteres: ${reader.result.length} | Quantidade de palavras: ${countWords}`;
         };
         reader.readAsText(input.files[0]);
     }
@@ -33,7 +33,7 @@
         const text = editor.value;
         const blob = new Blob([text], { type: 'text/plain' });
         const anchor = document.createElement('a');
-        let filename = prompt('Digite o nome do arquivo:', filenameDiv.innerHTML || 'Nome do arquivo');
+        let filename = prompt('Digite o nome do arquivo:', 'meu documento');
         if (!filename.endsWith('.txt')) {
             filename += '.txt';
         }
@@ -41,6 +41,12 @@
         anchor.href = window.URL.createObjectURL(blob);
         anchor.target = '_blank';
         anchor.click();
+
+        // Atualiza o nome do arquivo exibido na tela
+        filenameDiv.innerHTML = filename;
+
+        // Exibe a mensagem de sucesso
+        console.log("Arquivo salvo com sucesso!");
     }
 
     // Função para imprimir texto
