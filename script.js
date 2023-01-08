@@ -1,4 +1,4 @@
-(function() {
+(function () {
     const filenameDiv = document.getElementById('filename');
     const openButton = document.getElementById('open-button');
     const saveButton = document.getElementById('save-button');
@@ -16,17 +16,17 @@
     const newButton = document.getElementById('new-button');
     newButton.addEventListener('click', newFile);
 
-// Função para abrir arquivo
-function openFile(event) {
-    const input = event.target;
-    const reader = new FileReader();
-    reader.onload = function () {
-        editor.value = reader.result;
-        const countWords = reader.result.split(" ").length;
-        filenameDiv.innerHTML = `${input.files[0].name} <br> Tamanho do arquivo: ${(input.files[0].size/1024).toFixed(1)} kB <br> Quantidade de caracteres: ${reader.result.length} <br> Quantidade de palavras: ${countWords}`;
-    };
-    reader.readAsText(input.files[0]);
-}
+    // Função para abrir arquivo
+    function openFile(event) {
+        const input = event.target;
+        const reader = new FileReader();
+        reader.onload = function () {
+            editor.value = reader.result;
+            const countWords = reader.result.split(" ").length;
+            filenameDiv.innerHTML = `${input.files[0].name} <br> Tamanho do arquivo: ${(input.files[0].size / 1024).toFixed(1)} kB <br> Quantidade de caracteres: ${reader.result.length} <br> Quantidade de palavras: ${countWords}`;
+        };
+        reader.readAsText(input.files[0]);
+    }
 
     // Função para salvar arquivo
     function saveFile() {
@@ -51,8 +51,9 @@ function openFile(event) {
             '<body>' + editor.value + '</body></html>');
         // Imprima a janela
         printWindow.print();
+        // Feche a janela
+        printWindow.close();
     }
-
 
     // Adicione event listeners aos botões
     document.getElementById('open-button').addEventListener('click', function () {
@@ -93,7 +94,6 @@ function openFile(event) {
     const searchReplaceButton = document.getElementById("search-replace-button");
     searchReplaceButton.addEventListener("click", searchAndReplace);
 
-
     // Selecione o botão de tema escuro
     const darkThemeButton = document.querySelector('#dark-theme-btn');
 
@@ -101,6 +101,15 @@ function openFile(event) {
     darkThemeButton.addEventListener('click', () => {
         // Adicione a classe 'dark-theme' à tag 'body'
         document.body.classList.toggle('dark-theme');
+
+        // Verifique se o tema escuro está ativo
+        if (document.body.classList.contains('dark-theme')) {
+            // Atualize o texto do botão para 'Tema claro'
+            darkThemeButton.textContent = 'Tema claro';
+        } else {
+            // Atualize o texto do botão para 'Tema escuro'
+            darkThemeButton.textContent = 'Tema escuro';
+        }
     });
 
     // Armazena o histórico de revisões do texto
