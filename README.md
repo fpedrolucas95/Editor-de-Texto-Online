@@ -24,6 +24,7 @@
 
   <li>O código CSS é responsável por dar aparência e estilo aos elementos da página.</li>
   <li>O arquivo é compatível com todos os navegadores modernos.</li>
+  <li>Testado no Google Chrome (Mac/Win), MS Edge (Win), Firefox (Win) e Internet Explorer 11.</li>
 </ul>
 <h2>Instalação</h2>
 <p>Para usar este editor de texto, basta baixar o arquivo HTML e abri-lo em um navegador. Não é necessária nenhuma instalação adicional.</p>
