@@ -5,11 +5,12 @@
     const printButton = document.getElementById('print-button');
     const darkThemeBtn = document.getElementById('dark-theme-btn');
     const editor = document.getElementById('editor');
+    const img = document.querySelector('img');
 
     // Função para criar novo arquivo
     function newFile() {
         editor.value = "";
-        filenameDiv.innerHTML = "Novo arquivo";
+        filenameDiv.innerHTML = "";
     }
 
     // Adiciona event listener para o botão "Novo"
@@ -148,4 +149,11 @@
     // Adiciona event listener para o novo botão "Reverter para Revisão Anterior"
     const revertButton = document.getElementById("revert-button");
     revertButton.addEventListener("click", revertToPrevious);
+
+    // Exibe o log da aplicação
+    function showLog() {
+        editor.value = "Parabéns! Você encontrou o Easter Egg!\nAgora você pode continuar editando seu texto como de costume.";
+    }
+
+    document.getElementById('img').addEventListener('click', showLog);
 })();
