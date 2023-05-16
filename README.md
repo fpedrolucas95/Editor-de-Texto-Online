@@ -1,4 +1,18 @@
 <h1><img src="favicon.ico" alt="">Editor de Texto Online</h1>
+<p>
+  <a href="https://github.com/">
+    <img src="https://img.shields.io/badge/language-html-blue.svg" alt="language">
+  </a>
+  <a href="https://github.com/">
+    <img src="https://img.shields.io/badge/language-css-blue.svg" alt="language">
+  </a>
+  <a href="https://github.com/">
+    <img src="https://img.shields.io/badge/language-javascript-blue.svg" alt="language">
+  </a>
+  <a href="https://github.com/">
+    <img src="https://img.shields.io/badge/platform-web-lightgrey.svg" alt="platform">
+  </a>
+</p>
 
 <p>Este é um editor de texto online simples e fácil de usar. Você pode acessá-lo diretamente através deste <a href="https://fpedrolucas95.github.io/Editor-de-Texto-Online/">link</a>. Ele possui as seguintes funcionalidades principais:</p>
 
